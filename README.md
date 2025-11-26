@@ -1,72 +1,275 @@
-# Full Stack Data Science
----
+Full Stack Data Science — End-to-End Machine Learning Systems
+Developed by Nitant Singh
 
-> _"Jack of all trades, master of none, though oft times better than master of one."_
+This repository contains multiple fully structured, production-aligned machine learning projects.
+The work demonstrates the ability to design, build, and deliver complete data-driven applications, covering the full lifecycle from data exploration to deployment readiness.
 
-One of the common pain points that we have come across in big organizations is the last-mile delivery of data science applications. 
+Overview
 
-> You code, you test, you ship and you maintain
+Traditional machine learning work often stops at building models inside notebooks.
+This repository presents complete solutions that reflect real-world ML engineering expectations.
 
-One common delivery vehicle is to create dashboards(BI). But the one, that's very useful and neglected more often than not, is to create APIs and provide seamless integration with other applications within the company. This requires you to have a basic understanding of machine learning, server-side programming and front-end application.
+Highlights:
 
-In this workshop, you would learn how to build a seamless end-to-end data driven application - Data Exploration, Machine Learning Model, RESTful API and Web Application - to solve a business prediction problem.
+End-to-end ML workflows
 
-## Course Content  
-1. Introduction to Data Science Process 
-2. Introduction to Data Exploration
-3. Introduction to Machine Learning
-4. Overview of the case we will be solving in the workshop
-5. A simple ML Model
-6. Creating RESTful API
-7. Persisting model output
-8. Updating the model as more data comes in (batch only - no streaming)
-9. A simple webpage front-end to visualise the results and interact with the API.
-10. Creating a simple application that accomplishes this end-to-end
+Scalable and modular code organization
 
-An advanced version of the workshop, taught over two days, will cover the following additional topics
+Production-aligned architecture
 
-1. Building data pipeline and models  
-2. Deployment on cloud  
-3. Automate the workflow (eg: using `airflow`) 
+API-ready model outputs
+
+Clear business problem framing and solutions
+
+Key Features
+
+End-to-End ML Pipeline
+
+Data ingestion and preprocessing
+
+Exploratory data analysis
+
+Feature engineering
+
+Model development and comparison
+
+Evaluation and reporting
+
+Model persistence
+
+Application-level integration structure
+
+Production-Aligned Structure
+
+Modular directory hierarchy
+
+Separate data, notebook, and code sections
+
+API-compatible model outputs
+
+Deployment-ready templates
+
+Version-controlled workflow
+
+Multiple Independent ML Projects
+
+Each project contains its own documentation, data, notebooks, and model logic
+
+All projects are customized, refactored, and professionally structured
+
+Projects Included
+
+1. Credit Risk Prediction (Customized)
+
+Complete ML pipeline for assessing creditworthiness
+
+Multiple models implemented and compared
+
+Insights derived from borrower behavior
+
+Scalable and deployment-ready structure
+
+2. Employee Attrition Model
+
+Predictive model for employee churn
+
+HR analytics and insight extraction
+
+Model evaluation and interpretation
+
+3. Product Purchase Behavior Model
+
+Customer buying pattern prediction
+
+Data preprocessing and modeling techniques
+
+Visual insights and feature importance analysis
+
+4. Firefly LLM-Based Experiments
+
+Experiments using firefly-python
+
+Prompting, language model behavior, and use-case evaluations
+
+5. API and Deployment Setup Modules
+
+Starter templates for Flask/FastAPI
+
+Server-side structure for ML model serving
+
+Deployment-ready foundation
+
+Technologies Used
+
+Languages:
+
+Python
+
+Data & ML Libraries:
+
+NumPy
+
+Pandas
+
+Scikit-learn
+
+Matplotlib
+
+Seaborn
+
+HoloViews
+
+Backend / API Tools:
+
+Flask
+
+FastAPI (ready structure)
+
+Development Tools:
+
+Jupyter Notebook
+
+Git
+
+GitHub
+
+Terminal
+
+Environment:
+
+Conda / Virtualenv
+
+Repository Structure
+datascience_fullstack/
+│
+├── credit-risk-Nitant/              
+├── employee-attrition-Nitant/       
+├── product-purchase-model-Nitant/   
+├── firefly-LLM-examples-Nitant/     
+├── server-setup/                    
+│
+├── data/                            
+├── notebooks/                       
+├── requirements.txt                 
+└── README.md
 
 
-## Target Audience
-- **A programmer but not a data science practioner**: A programmer with experience in server-side or front-end development and maybe has some familiarity with doing data analysis. You could be looking to transition in to building data driven products or a create a richer product experience with data.
-- **A data science practioner but not a programmer**: A data science with some experience in doing data analysis, preferably in a scripting language (R/Python/Scala), but wants to get a deeper and a more applied perspective on creating data driven products.
+Key structuring principles:
 
+Each project is isolated and documented
 
-##  Pre-requisites
-- Programming knowledge is mandatory. Attendee should be able to write conditional statements, use loops, be comfortable writing functions and be able to understand code snippets and come up with programming logic.
-- Participants should have a basic familiarity of Python. Specifically, we expect participants to know the first four sections from this: [http://anandology.com/python-practice-book/](http://anandology.com/python-practice-book/)
-- Participants should also have some experience with using Python for Data Science. Specifically, participants should be able to work with the following python libraries
-  - `jupyter`: For doing literate programming in notebooks
-  - `numpy`: For scientific computation
-  - `pandas`: For data wrangling and transformation of tabular data (dataframes)
-  - `scikit-learn`: For building machine learning models
+Data is separated from code
 
-## Software Requirements
+Notebooks follow clear, understandable narrative flow
 
-We will be using Python data stack for the workshop. Please install [Ananconda for Python 3.5 or 3.6][anaconda] for the workshop. Additional requirement will be communicated to participants.
+Naming conventions reflect professional standards
 
-Install the required packages using conda.
+Example Workflow (Credit Risk System)
 
-```
-conda install numpy pandas matplotlib seaborn scikit-learn pydotplus flask flask-wtf
-conda install -c ioam holoviews bokeh
-```  
+Data Preparation
 
-We'll also need a python library firefly-python that is not available as conda package. Install it using pip.
+Cleaning missing values
 
-```
-pip install firefly-python rorolite
-```
+Label encoding and transformation
 
-[anaconda]: https://www.continuum.io/downloads
+Feature selection and scaling
 
-## Facilitators’ Profile
+Handling of outliers
 
-Anand Chitipothu has been crafting beautiful software since a decade and half. He's now building a data science platform, [rorodata](http://rorodata.com/), which he recently co-founded. He regularly conducts advanced programming courses through Pipal Academy. He is co-author of *web.py*, a micro web framework in Python. He has worked at Strand Life Sciences and Internet Archive. You can tweet him at [@anandology](https://twitter.com/anandology).
+Train-test splitting
 
-Amit Kapoor teaches the craft of telling visual stories with data. He conducts workshops and trainings on Data Science in Python and R, as well as on Data Visualisation topics. His background is in strategy consulting having worked with AT Kearney in India, then with Booz & Company in Europe and more recently for startups in Bangalore. He did his B.Tech in Mechanical Engineering from IIT, Delhi and PGDM (MBA) from IIM, Ahmedabad. You can find more about him at http://amitkaps.com/ and tweet him at [@amitkaps](https://twitter.com/amitkaps).
+Model Development
 
-Bargava Subramanian is a practicing Data Scientist. He has 14 years of experience delivering business analytics solutions to Investment Banks, Entertainment Studios and High-Tech companies. He has given talks and conducted workshops on Data Science, Machine Learning, Deep Learning and Optimization in Python and R. He has a Masters in Statistics from University of Maryland, College Park, USA. He is an ardent NBA fan. You can tweet to him at [@bargava](https://twitter.com/bargava).
+Logistic Regression
+
+Random Forest
+
+Decision Tree
+
+SVM (optional)
+
+Model Evaluation
+
+Accuracy
+
+Precision
+
+Recall
+
+AUC-ROC
+
+Confusion matrix
+
+Visual Analytics
+
+Correlation heatmaps
+
+Feature importance plots
+
+Distribution analysis
+
+Comparative model charts
+
+Deployment Readiness
+
+Model saved using industry practices
+
+API-ready architecture
+
+File structure supporting production workflows
+
+Future Enhancements
+
+API deployment using FastAPI and Streamlit
+
+SHAP and LIME explainability modules
+
+Hyperparameter tuning using GridSearchCV / Optuna
+
+Automated ML pipelines
+
+CI/CD integration for ML workflows
+
+Cloud deployment (AWS, Azure, GCP)
+
+Model monitoring and retraining scripts
+
+Author Profile
+
+Nitant Singh
+Generative AI Engineer | Machine Learning Developer | Data Science Practitioner
+
+Professional Focus Areas:
+
+End-to-end ML system development
+
+API-based model deployments
+
+Data engineering and preprocessing workflows
+
+LLM experimentation and prompt engineering
+
+Full-stack DS integration
+
+Links:
+GitHub: https://github.com/Nitant28
+
+LinkedIn: https://www.linkedin.com/in/nitant-singh-419623339/
+
+Purpose of This Repository
+
+This repository demonstrates capabilities required for roles such as:
+
+Machine Learning Engineer
+
+Data Scientist
+
+AI Engineer
+
+Applied Machine Learning Associate
+
+Data Analyst
+
+Product Data Scientist
+
+It highlights strengths in model development, system design, and production-oriented implementation.
